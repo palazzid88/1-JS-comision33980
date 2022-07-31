@@ -7,89 +7,132 @@ function probarCodigo()
 
 
 
-
-let plan=prompt("ingrese plan 210 o 310");
-console.log(plan);
-let especialista=prompt("ingrese especialista");
+///variables del proceso
 let medico;
 let error;
-//inicio plan 210
-while(error!="error")
-{
-  if(plan==210)
-  {
-    while(especialista!="esc")
-  {
-    switch(especialista)
-    {
+let especialista;
+let plan;
+
+///funcion plan 210/310
+function menu() {
+    plan=prompt("ingrese plan 210 o 310");
+    console.log(plan);
+    switch (plan) {
+        case "210":
+            plan210()
+            break;
+
+        case "310":
+            plan310()
+            break;
+
+        default:
+            alert("plan no existente")
+            break;
+    }
+
+
+}
+
+
+
+///funcion entrada de especialista
+function especialistas() {
+    especialista = prompt("ingrese especialidad: \n clinico \n traumatologo \n cardiologo \n dermatologo");
+    console.log(especialista)
+}
+
+///funcion resultado
+function resultado() {
+    console.log("su especialista según su plan es " +medico);
+}
+
+///funcion reingresar
+function reingrese() {
+    especialista = prompt("Re-ingrese especialidad:\n clinico, \n traumatologo, \n cardiologo, \n dermatologo \n o escriba esc para salir");
+}
+
+///Funcion no valido
+function error() {
+    console.log ("especialista ingresado invalido")
+}
+
+
+menu()
+
+
+
+///funcion plan 210
+function plan210() {
+    especialistas()
+///inicio while especialidad
+    while(especialista!="esc") {
+///inicio switch especialista
+    switch(especialista) {
       case "clinico":
         medico= "Marcelo Gómez";
         console.log(medico);
-        console.log("Su especialista según su plan es " +medico);
+        resultado()
         break;
       case "traumatologo":
         medico= "Estefanía Rossi";
-        console.log("Su especialista según su plan es " +medico);
+        resultado()
         break;
       case "cardiologo":
         medico= "José María Blanco";
-        console.log("Su especialista según su plan es " +medico);
+        resultado()
         break;
       case "desmatologo":
         medico= "Josefina Bayer";
-        console.log("Su especialista según su plan es " +medico);
+        resultado()
         break;
       default:
-        console.log("no es un especialista válido validad");
+        error()
         break;
-    }//fin del switch
-     especialista=prompt("reingrese un especialista o escriba esc para salir");
-  }//fin del while
-    console.log("Gracias por utilizar nuestra cartilla online!");
-    error="error";
-  }
-  else
-  {
-  //inicio plan 310 
-  if(plan==310)
-  {
-    while(especialista!="esc")
-  {
-    switch(especialista)
-    {
+    }
+    ///fin del switch
+reingrese()  
+}
+  //fin del while
+  console.log("Gracias por utilizar nuestra cartilla online!");
+}
+
+
+
+
+  ///funcion plan 310 
+function plan310() {
+    especialistas()
+///inicio while especialidad
+    while(especialista!="esc") {
+///inicio switch especialista
+    switch(especialista) {
       case "clinico":
         medico= "Claudio Sosa";
         console.log(medico);
-        console.log("Su especialista según su plan es " +medico);
+        resultado()
         break;
       case "traumatologo":
         medico= "Marcela Chavarria";
-        console.log("Su especialista según su plan es " +medico);
+        resultado()
         break;
       case "cardiologo":
         medico= "Carlos Alberto Giacchio";
-        console.log("Su especialista según su plan es " +medico);
+        resultado()
         break;
       case "desmatologo":
         medico= "Claudia Díaz";
-        console.log("Su especialista según su plan es " +medico);
+        resultado()
         break;
       default:
-        console.log("no es un especialista válido validad");
+        error()
         break;
-    }//fin del switch
-     especialista=prompt("reingrese un especialista o escriba esc para salir");
-  }//fin del while
+    }
+    //fin del switch
+    reingrese()  
+}
+  //fin del while
    console.log("Gracias por utilizar nuestra cartilla online!");
-   error="error"
-  }
-  else /*plan no válido*/
-  {
-    console.log("plan no válido");
-    plan=prompt("reingrese plan válido");
-    especialista=prompt("ingrese especialista");
-    error="continue";
-  }
-  }
 }
 }
+
