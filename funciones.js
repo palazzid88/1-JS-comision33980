@@ -6,13 +6,6 @@ function probarCodigo()
   /*ESPECIALISTA CARTILLA MÉDICA OBRA SOCIAL MÉDICO*/
 
 
-
-// ///variables del proceso
-// let medico;
-// let error;
-// let especialista;
-// let plan;
-
 ///funcion plan 210/310
 function menu() {
     plan=prompt("ingrese plan 210 o 310");
