@@ -7,11 +7,11 @@ function probarCodigo()
 
 
 
-///variables del proceso
-let medico;
-let error;
-let especialista;
-let plan;
+// ///variables del proceso
+// let medico;
+// let error;
+// let especialista;
+// let plan;
 
 ///funcion plan 210/310
 function menu() {
