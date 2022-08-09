@@ -3,9 +3,10 @@ function probarCodigo()
 {
 
 ///variables del proceso
-let medico;
-let error;
-let especialista;
-let plan;
+// let medico;
+// let error;
+// let especialista;
+// let plan;
 
+// 
 }
