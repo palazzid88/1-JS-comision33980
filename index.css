@@ -1,0 +1,82 @@
+body {
+    max-width: 100%;
+    background-image: url("/img/medical1.jpg");
+    background-size:cover;
+}
+
+.header {
+    background-color: aliceblue;
+    width: 100%;
+    margin: auto;
+}
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion__barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.barra {
+    margin: 10px;
+    padding: 5px;
+}
+
+.titulo {
+    margin: 10px;
+    padding: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+.container .contact {
+    flex-direction: column;
+    width: 100%;
+}
+
+.container .contact .contact__form .form__label {
+    font-size: 17px;
+    color: red; }
+  
+  .container .contact .btn-submit {
+    margin: auto; }
+    .container .contact .btn-submit .btn-primary {
+      background-color: red;
+      border-color: red;
+      border-radius: 5px; }
+    .container .contact .btn-submit .btn-primary:hover {
+      border-color: red;
+      color: white;
+      background-color: red; }
+
+
+
+.descripcion {
+    text-align: center;
+    align-items: center;
+}
+
+.subtitulo {
+    /* background-color: aliceblue; */
+    margin: 5px;
+    padding: 5px;
+}
