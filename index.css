@@ -1,6 +1,6 @@
 body {
     max-width: 100%;
-    background-image: url("/img/medical1.jpg");
+    background-image: url("./img/medical.jpg");
     background-size:cover;
 }
 
